@@ -6,10 +6,14 @@
 	color: #ee6e73;
 }
 
-.mi-navbar{
+nav{
 	background-color: white;
 }
 
 .mi-buscador label .icono{
 	color: rgba(24, 18, 18, 0.7);
+}
+
+.pokedex{
+	border: 2px solid orange;
 }
