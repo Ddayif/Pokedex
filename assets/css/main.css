@@ -24,11 +24,18 @@ nav .input-field label i {
 }
 
 .modal{
-	background-color: red;
+	background-color: green;
 }
 
 img{
-	width: 100px;
-	height: 100px;
-	background-color: gray;
+    width: 160px;
+    height: 160px;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.mi-btn{
+	height: 200px;
+	margin-right: 79px;
+	margin-bottom: 50px;    
 }

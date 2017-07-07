@@ -44,15 +44,33 @@ $(document).ready(function(){// obtengo
         url: "http://pokeapi.co/api/v2/pokemon",
         type: "GET",
         dataType: "json",
-        data: {"limit": "811"},
+        data: {"limit": "719"},
     })
     .done(function(res) {
         console.log("success");
-        for (var i = 1; i < 710; i++) {
-        var pokePic = $("<div class= 'col s3 m3 l3 xl3'> <img src=http://pokeapi.co/media/img/" + i + ".png id=" + i + "></div>");
+        for (var i = 1; i < 719; i++) {
+        var pokePic = $("<a class='waves-effect waves-light btn mi-btn' href='#caja-modal'><div class= 'col s4 m4 l4 xl4'><img src=http://pokeapi.co/media/img/" + i + ".png id=" + i + "></div>");
             $("div.pokemon").append(pokePic);
         }
 
+
+        $('#caja-modal').modal('open');
+            $('#caja-modal').modal('close');
+     })
+        .fail(function(){
+            console.log('error');
+        })
+        .always(function(){
+            console.log('complete');
+        });
+    });
+
+
+
+
+
+
+/*
     $("img").click(function() {
         var miModal = $(".caja-modal");   
         event.preventDefault();
@@ -88,4 +106,4 @@ $(document).ready(function(){// obtengo
     })
    }); 
 
- })
+ })*/
