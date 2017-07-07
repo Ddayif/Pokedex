@@ -1,0 +1,15 @@
+ input[type=search]:not(.browser-default){
+	height: 4rem;
+}
+
+.mi-navbar .title{
+	color: #ee6e73;
+}
+
+.mi-navbar{
+	background-color: white;
+}
+
+.mi-buscador label .icono{
+	color: rgba(24, 18, 18, 0.7);
+}
