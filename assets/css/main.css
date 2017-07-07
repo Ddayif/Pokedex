@@ -2,7 +2,7 @@
 	height: 4rem;
 }
 
-.mi-navbar .title{
+h3{
 	color: #ee6e73;
 }
 
@@ -15,6 +15,20 @@ nav .input-field label i {
     color: black;
 }
 
+.seleccion{
+	background-color: green;
+	width: 7%;
+}
 .pokedex{
 	border: 2px solid orange;
+}
+
+.modal{
+	background-color: red;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+	background-color: gray;
 }

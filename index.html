@@ -7,31 +7,54 @@
 	<link rel="shortcut icon" type="text/css" href="assets/icon/favicon.ico">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>	
-	<nav class="mi-navbar">
-	    <div class="nav-wrapper">
-	      	<a href="#" class="brand-logo center title">Pokédex</a>
-	    </div>
 	</nav>
-	<nav class="mi-buscador">
-	    <div class="nav-wrapper">
-	      	<form>
-	        	<div class="input-field icono">
-	          		<input id="search" type="search" required>
-	          		<label class="label-icon" for="search"><i class="material-icons">search</i></label>
-	          		<i class="material-icons">close</i>
-	        	</div>
-	      	</form>
-	    </div>
-	</nav>
-	<div class='pokemon'></div>
-    <div class='pokedex'>
-        <h1>Pokedex</h1>
-        <p class='instructions'>Click on a pokemon to see its attributes!</p>
-    </div>
+	<div class="container" >
+		<div class="row">
+			<div class="col m12">
+				<h3 class="center-align">POKÉDEX</h3>
+				<nav class="mi-buscador">
+	   			 	<div class="nav-wrapper">
+	      				<form>
+	        				<div class="input-field icono">
+	          					<input id="search" type="search" required>
+	          					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+	          					<i class="material-icons">close</i>
+	        				</div>
+	      				</form>
+	   	 			</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col m12 offset-m10">
+		 		<a class="waves-effect waves-light btn" id="button">A-Z</a>
+			</div>
+		</div>
+	</div>
+	
+		<div class="caja-modal">
+		</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="pokemon"></div>
+	    		<!--<div class="pokedex">
+	        	<h1>Pokedex</h1>
+	        	<p class='instructions'>Click on a pokemon to see its attributes!</p>
+	    		</div>-->
+			</div>
+		</div>
+	</div>
+
+
+	
+	
 
 
 
