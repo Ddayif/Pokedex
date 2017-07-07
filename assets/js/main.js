@@ -47,17 +47,46 @@ $(document).ready(function(){
         data: {"limit": '811'},
     })
     .done(function(res) {
-        for (var i = 1; i < 811; i++) {
-        var pokePic = $("<img src='http://pokeapi.co/api/v2/pokemon'>");
-        $('div.pokemon').append(pokePic);
-    }
         console.log("success");
+        for (var i = 1; i < 710; i++) {
+        var pokePic = $("<img src=http://pokeapi.co/media/img/" + i + ".png id=" + i + ">");
+            $('div.pokemon').append(pokePic);
+        }
+
+        $('img', this).click(function() {
+             event.preventDefault();
+        var uniqueId = $(this).attr('id');
+        var webAddress = "http://pokeapi.co/api/v2/pokemon" + uniqueId;
+        var types = " ";
+
+        $.get(webAddress, function(res) {
+            for (var j = 0; j < res.types.length; j++) {
+                types += "<li>" + res.types[j].name + "</li>";
+
+            }
+        }, 'json');
+
+        $.get(webAddress, function(res) {
+
+            $('div.pokedex').html(
+                "<h1>" + res.name + "</h1>" +
+                "<img src=http://pokeapi.co/media/img/" + uniqueId + ".png>" +
+                "<h4>Types:</h4>" +
+                "<ul>" +
+                types +
+                "</ul>" +
+                "<h4>Height:</h4>" +
+                "<p>" + res.height + "</p>" +
+                "<h4>Weight:</h4>" +
+                "<p>" + res.weight + "</p>"
+            );
+
+        }, 'json');
     })
-    .fail(function() {
-        console.log("error");
-    })
-    .always(function() {
-        console.log("complete");
-    });
-    
-})
+         $(document).ready(function(){
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+    }); 
+
+ })

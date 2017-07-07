@@ -8,10 +8,11 @@
 
 nav{
 	background-color: white;
+	box-shadow: none;
 }
 
-.mi-buscador label .icono{
-	color: rgba(24, 18, 18, 0.7);
+nav .input-field label i {
+    color: black;
 }
 
 .pokedex{
