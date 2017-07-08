@@ -28,14 +28,43 @@ nav .input-field label i {
 }
 
 img{
-    width: 160px;
-    height: 160px;
+	width: 150px;
+    height: 150px;
     background-color: gray;
-    margin-top: 20px;
+    margin-top: 13px;
+    margin-left: 19px;
 }
 
 .mi-btn{
-	height: 200px;
-	margin-right: 79px;
-	margin-bottom: 50px;    
+    height: 26%;
+    width: 26%;
+    margin-right: 0px;
+    margin-left: 44px;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-left: 18px;
+
+}
+
+.iconos{
+    width: 49%;
+    height: 10%;
+    background-color: #26a69a;
+    margin-left: 0;
+}
+
+.icon-2{
+	width: 49%;
+    height: 10%;
+    background-color: #26a69a;
+	left: 60px;
+	bottom: 52px;
+}
+
+.icon-3{
+	width: 49%;
+    height: 10%;
+    background-color: #26a69a;
+	left: 120px;
+	bottom: 100px;
 }
